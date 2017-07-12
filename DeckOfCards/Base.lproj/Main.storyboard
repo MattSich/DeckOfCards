@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Picker View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardPickerViewController" customModule="DeckOfCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEAL TO START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-k2-tDS">
+                                <rect key="frame" x="117.5" y="323" width="140.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards In Deck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-Ur-MXa">
+                                <rect key="frame" x="104" y="30" width="166" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="EaI-ab-31o"/>
+                                    <constraint firstAttribute="width" constant="166" id="Nk0-ZE-bgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.39667716707502093" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9c-ux-IMD">
+                                <rect key="frame" x="104" y="50.5" width="166" height="47.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="EWZ-ZE-5cM"/>
+                                    <constraint firstAttribute="height" constant="47.5" id="zyQ-4P-iJa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="0.19678877421787808" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7K-6z-n9M">
+                                <rect key="frame" x="56" y="563" width="111.5" height="44"/>
+                                <color key="backgroundColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DA8-b0-p47"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaJ-cG-g0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZH-1M-uh9">
+                                <rect key="frame" x="207.5" y="563" width="111.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MGJ-z7-vlf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKr-Ct-HH7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xB-wQ-lPK">
+                                <rect key="frame" x="16" y="622" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2lf-nd-5rI"/>
+                                </constraints>
+                                <state key="normal" title="reset deck">
+                                    <color key="titleColor" red="1" green="0.50268003014755269" blue="0.50256346158454779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetDeck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joW-kw-eQL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-ul-vWR">
+                                <rect key="frame" x="61.5" y="138" width="251" height="365"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fe6-VN-QWr">
+                                        <rect key="frame" x="15" y="15" width="221" height="335"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DFd-ul-vWR" secondAttribute="height" multiplier="222:323" id="HwT-nw-PBX"/>
+                                    <constraint firstItem="fe6-VN-QWr" firstAttribute="top" secondItem="DFd-ul-vWR" secondAttribute="top" constant="15" id="NWT-Oi-ban"/>
+                                    <constraint firstItem="fe6-VN-QWr" firstAttribute="leading" secondItem="DFd-ul-vWR" secondAttribute="leading" constant="15" id="suP-3Y-T4V"/>
+                                    <constraint firstAttribute="trailing" secondItem="fe6-VN-QWr" secondAttribute="trailing" constant="15" id="tGR-az-uTC"/>
+                                    <constraint firstAttribute="bottom" secondItem="fe6-VN-QWr" secondAttribute="bottom" constant="15" id="uNG-Sx-RdR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.98183341707502092" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2xB-wQ-lPK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0vh-BF-H9B"/>
+                            <constraint firstItem="TJC-Ur-MXa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2KK-5E-yoL"/>
+                            <constraint firstItem="fgI-k2-tDS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="31G-33-K3F"/>
+                            <constraint firstItem="dZH-1M-uh9" firstAttribute="leading" secondItem="F7K-6z-n9M" secondAttribute="trailing" constant="40" id="5IZ-wb-bJk"/>
+                            <constraint firstItem="2xB-wQ-lPK" firstAttribute="top" secondItem="F7K-6z-n9M" secondAttribute="bottom" constant="15" id="7af-T8-37t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2xB-wQ-lPK" secondAttribute="trailing" id="DFA-hO-SEs"/>
+                            <constraint firstItem="dZH-1M-uh9" firstAttribute="bottom" secondItem="F7K-6z-n9M" secondAttribute="bottom" id="Ich-B5-NdZ"/>
+                            <constraint firstItem="DFd-ul-vWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KUB-eU-YUz"/>
+                            <constraint firstItem="F7K-6z-n9M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="QfC-BO-hsH"/>
+                            <constraint firstItem="o9c-ux-IMD" firstAttribute="top" secondItem="TJC-Ur-MXa" secondAttribute="bottom" id="S5w-h9-NYn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dZH-1M-uh9" secondAttribute="trailing" constant="40" id="TZU-Pf-94y"/>
+                            <constraint firstItem="DFd-ul-vWR" firstAttribute="top" secondItem="o9c-ux-IMD" secondAttribute="bottom" constant="40" id="U4W-yk-G2V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2xB-wQ-lPK" secondAttribute="bottom" constant="15" id="YXW-dJ-QlX"/>
+                            <constraint firstItem="TJC-Ur-MXa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ddJ-wc-WV5"/>
+                            <constraint firstItem="F7K-6z-n9M" firstAttribute="width" secondItem="dZH-1M-uh9" secondAttribute="width" id="ecb-ew-HvU"/>
+                            <constraint firstItem="o9c-ux-IMD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpd-Qa-RO8"/>
+                            <constraint firstItem="fgI-k2-tDS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYm-zP-mVX"/>
+                            <constraint firstItem="F7K-6z-n9M" firstAttribute="top" secondItem="DFd-ul-vWR" secondAttribute="bottom" constant="60" id="xXS-Mx-Lle"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardContainer" destination="DFd-ul-vWR" id="Gfh-MJ-ewh"/>
+                        <outlet property="cardPreview" destination="fe6-VN-QWr" id="V1Z-jk-V7C"/>
+                        <outlet property="dealButton" destination="dZH-1M-uh9" id="kZa-mm-EDr"/>
+                        <outlet property="numberOfCards" destination="o9c-ux-IMD" id="kyM-rR-Hgj"/>
+                        <outlet property="resetBottomConstraint" destination="YXW-dJ-QlX" id="OLu-iS-WCh"/>
+                        <outlet property="resetDeckButton" destination="2xB-wQ-lPK" id="5nJ-IH-zv7"/>
+                        <outlet property="shuffleButton" destination="F7K-6z-n9M" id="dII-JM-dgn"/>
+                        <outlet property="shuffleTopConstraint" destination="7af-T8-37t" id="D2g-jl-vsV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
