@@ -29,7 +29,7 @@ class CardPickerModel{
         if let nonNilCard = newCard {
             updateCardCount?(deck.cards.count)
             hideReset?(false)
-            return newCard
+            return nonNilCard
         } else {
             outOfCards?()
             return nil
